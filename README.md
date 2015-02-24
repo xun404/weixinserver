@@ -23,6 +23,7 @@
 
 项目支持页面
 -------------------------
+http://rmbz.net/weixin_server_dev.html
     
 
 其他问题
