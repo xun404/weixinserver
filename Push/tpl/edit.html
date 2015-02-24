@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>消息发送编辑</title>
+    <style type="text/css">
+        #title {
+            text-align: center;
+            font-weight: bold;
+            font-family: "MS Serif", "New York", serif;
+            font-size: 24px;
+            text-decoration: blink;
+            color: #009;
+            filter: RevealTrans(Duration=10, Transition=5);
+        }
+
+        .Table {
+            font-family: "MS Serif", "New York", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <p>消息发送编辑 </p>
+    </div>
+    <form method="post">
+        <table width=100% border="0" align="center" class="Table">
+            <tr>
+                <td width="15%">消息1</td>
+                <td width="20%">
+                    <select name="j1" id="j1">
+                        <option value="0" $Model.J1.wb>文本</option>
+                        <option value="1" $Model.j1.tw>图文</option>
+                    </select>
+                </td>
+                <td width="65%">
+                    <label for="textfield"></label>
+                    <input name="MsgText1" type="text" id="MsgText1" value="$Model.J1.Text" />
+                </td>
+            </tr>
+            <tr>
+                <td>消息2</td>
+                <td>
+                    <select name="j2" id="j2">
+                        <option value="0" ${Model.j2.wb}>文本</option>
+                        <option value="1" ${Model.j2.tw}>图文</option>
+                    </select>
+                </td>
+                <td><input type="text" name="MsgText2" id="MsgText2" value="$Model.J2.Text"/></td>
+            </tr>
+        </table>
+        <input type="submit" value="保存" />
+    </form>
+</body>
+</html>

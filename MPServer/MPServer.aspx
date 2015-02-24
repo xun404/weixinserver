@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" Async="true" AutoEventWireup="true" CodeBehind="MPServer.aspx.cs" Inherits="Weixin_Server.MPServer.MPServer" %>
